@@ -1,0 +1,14 @@
+<div class="back p-5">
+    <div class="container" >
+    <div class="row">
+        <app-my-proudct 
+        (viewMyOpject)="reciveMyOpj($event)"
+        (newArr)="acceptMyArr($event)"
+         [myProudct]="proud" 
+         [myArr]="myProudctArr" 
+         [proIndex]="proIndex" 
+         *ngFor="let proud of myProudctArr;let proIndex = index" 
+        class="col-md-3"></app-my-proudct>
+    </div>
+</div>
+</div>

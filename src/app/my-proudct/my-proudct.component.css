@@ -1,0 +1,25 @@
+.re{
+    color: goldenrod;
+}
+.card{
+    margin:15px;
+}
+.btn{
+    margin-top: 15px;
+    width: 150px;
+    background-color:antiquewhite;
+    color: brown;
+    border: 2px solid brown;
+    border-radius: 10px;
+    transform: translateX(50%) translateY(-15PX);
+}
+h4{
+    position: absolute;
+    right: 10px;
+    color:brown;
+    display: inline;
+    
+}
+h5{
+    color: brown;
+}

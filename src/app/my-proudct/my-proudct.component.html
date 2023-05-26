@@ -1,0 +1,32 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="myProudct.proImg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{myProudct.proName}}</h5>
+    <p class="card-text">{{myProudct.proDetails}}</p>
+    <div class="star">
+        <i class="fas fa-star m-2 re"></i>
+        <i class="fas fa-star m-2 re"></i>
+        <i class="fas fa-star m-2 re"></i>
+        <i class="fas fa-star m-2 re"></i>
+        <i class="fas fa-star m-2 re"></i>
+        <h4>${{myProudct.proPrice}}</h4>
+    </div>
+    <div [ngSwitch]="myProudct.proQuantity">
+            <p *ngSwitchCase="0" class="text-danger">No Product Avails..</p>
+            <p *ngSwitchCase="1" class="text-warning">Only One Product Avail..</p>
+            <p *ngSwitchDefault>Qunatity :{{myProudct.proQuantity}}</p>
+        </div>
+  </div>
+  <a href="#" class="btn btn-primary"
+  [ngClass]="
+  {'bg-danger':myProudct.proQuantity == 0}
+  "
+  ><i class="fas fa-cart-plus"></i></a>
+  <button (click)="sendData()"
+   class="btn bg-secondary text-light rounded-3" 
+              [routerLink]="['/products', '']"
+            [routerLinkActive]="'bg-danger '"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >View</button>
+  <button (click)="delete(proIndex)" class="btn bg-danger text-light rounded-3">delete</button>
+</div>

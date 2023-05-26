@@ -1,0 +1,33 @@
+footer{
+    background-color: bisque;
+    padding: 25px;
+}.copyright{
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+h4{
+    color: brown;
+}
+i{
+    font-size: 38px;
+    color: brown;
+    margin: 25px;
+}
+.row{
+    display: flex;
+}
+strong{
+    color: brown;
+}
+
+.con{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

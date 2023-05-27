@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Iproudct } from 'src/models/iproudct';
 
 @Component({
@@ -6,8 +6,7 @@ import { Iproudct } from 'src/models/iproudct';
   templateUrl: './proudcts.component.html',
   styleUrls: ['./proudcts.component.css'],
 })
-export class ProudctsComponent implements OnInit {
-  ngOnInit(): void {}
+export class ProudctsComponent {
   myProudctArr: Iproudct[] = [
     {
       proId: 1,
@@ -66,7 +65,7 @@ export class ProudctsComponent implements OnInit {
       proQuantity: 0,
     },
     {
-      proId: 8 ,
+      proId: 8,
       proImg: 'assets/imgs/5.jpg',
       proName: 'UTIL',
       proDetails: ' fpwuefjsfopf f ewfj k;af ij  dswf f grgroekg wrg ',
@@ -75,8 +74,7 @@ export class ProudctsComponent implements OnInit {
     },
   ];
 
-  
-  reciveMyOpj(showOpj:{}) {
+  reciveMyOpj(showOpj: {}) {
     console.log(showOpj);
   }
   acceptMyArr(newArr: []) {

@@ -8,9 +8,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class MyProudctComponent {
   @Input() myProudct: any;
   @Input() myArr: any;
-  @Input() proIndex: number=0;
+  @Input() proIndex: number = 0;
   delete(index: number) {
-
     this.myArr = this.myArr.filter((item: {}, i: number) => i != index);
     this.newArr.emit(this.myArr);
   }
@@ -19,5 +18,4 @@ export class MyProudctComponent {
   }
   @Output() viewMyOpject = new EventEmitter();
   @Output() newArr = new EventEmitter();
-  
 }
